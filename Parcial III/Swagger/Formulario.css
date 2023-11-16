@@ -1,0 +1,83 @@
+* {
+    box-sizing: content-box;
+    margin: 5px;
+    padding: 5px;
+    background-color: azure;
+}
+#idFormURL {
+    margin-left: 30%;
+}
+
+#group {
+    display: block;
+    width: fit-content;
+}
+.etiqueta {
+    text-align: center;
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace;
+    border: 3px double black;
+    background-color:silver;
+}
+
+.campo {
+    background-color: white;
+    border: 2px;
+    border-style: inset;
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.campo::placeholder{
+    font: caption;
+    opacity: 0.75;
+    color: darkgray;
+    font-style: italic;
+}
+
+#titulo {
+    padding: 10px;
+    margin: 10px;
+    color: beige;
+    background-color:cadetblue;
+    font-weight: bolder;
+    font-size: 32px;
+    border: 2px double black;
+    text-align: center;
+}
+#btnFormURL {
+    text-align: center;
+    background-color: white;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    width: 465px;
+}
+#btnFormURL:hover {
+    background-color: gainsboro;
+}
+#btnFormURL:active{
+    background-color: darkgray;
+}
+
+#encabezado {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+#txtNombre {
+    width: 73%;
+    box-sizing: border-box;
+}
+
+#txtAp_Paterno {
+    width: 50%;
+    box-sizing: border-box;
+}
+#txtAp_Materno {
+    width: 50%;
+    box-sizing: border-box;
+}
+#txtSemestre {
+    width: 69%;
+    box-sizing: border-box;
+}

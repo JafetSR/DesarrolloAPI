@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Peticion con formulario</title>
+</head>
+<body>
+    <div class="etiqueta" id="titulo">CRUD POR FORMULARIO</div>
+    <div>
+        <form id="idFormURL" action="http://localhost:8081/alumnos" method="post" enctype="application/x-www-form-urlencoded">
+            <fieldset id="group">
+                <legend id="encabezado">Datos Del Estudiante</legend>
+                <label class="etiqueta" for="nombre">Nombre: </label>
+                <input class="campo" type="text" name="nombre" id="txtNombre" placeholder="Nombre(s) del estudiante"><br>
+                <label class="etiqueta" for="apellido_paterno">Apellido Paterno: </label>
+                <input class="campo" type="text" name="apellido_paterno" id="txtAp_Paterno" placeholder="Apellido paterno del estudiante"><br>
+                <label class="etiqueta" for="apellido_materno">Apellido Materno: </label>
+                <input class="campo" type="text" name="apellido_materno" id="txtAp_Materno" placeholder="Apellido materno del estudiante"><br>
+                <label class="etiqueta" for="semestre">Semestre: </label>
+                <input class="campo" type="number" name="semestre" id="txtSemestre" placeholder="Semestre que cursa el estudiante"><br>
+                <input type="submit" value="Enviar Form URL" id="btnFormURL">
+            </fieldset>
+        </form>
+    </div>
+    <!-- <div>
+        <form id="idFormData" action="http://localhost:8081/alumnos" method="post" enctype="multipart/form-data">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="nombre">Apellido: </label>
+            <input type="text" name="apellido" id="apellido">
+            <input type="submit" value="Enviar Form Data" id="btnFormData">
+        </form>
+    </div> -->
+    <script>
+        // document.getElementById("btnFormURL").addEventListener("onclick", () => {
+        //     const formData = new FormData(document.getElementById("idFormURL"));
+        //     const urlSearch = new URLSearchParams(formData).toString();
+        //     fetch("http://localhost:8081/alumnos", {
+        //         method: "POST",
+        //         body: urlSearch
+        //     }).then(response => response.json())
+        //         .then(data => console.log(data));
+        // });
+        // document.getElementById("btnFormData").addEventListener("onclick", () => {
+        //     const formData = new FormData(document.getElementById("idFormData"));
+        //     fetch("http://localhost:8081/alumnos", {
+        //         method: "POST",
+        //         body: formData
+        //     }).then(response => response.json())
+        //         .then(data => console.log(data));
+        // });
+    </script>
+</body>
+</html>
