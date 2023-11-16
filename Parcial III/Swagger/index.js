@@ -167,6 +167,11 @@ app.get("/estudiante", async (req, res) => {           //CONSULTA GENERAL
  *     description: Obtiene la información de un estudiante específico por medio de su ID obtenido del parametro de la URL
  *     tags: 
  *       - Estudiantes
+ *     parameters:
+ *         in: /estudiante/:id
+ *         name: id
+ *         schema:
+ *             type: integer
  *     responses:
  *       200:
  *         description: Json con la información del estudiante consultado
