@@ -5,7 +5,7 @@ fetch("http://localhost:8081/api-docs-json")
         .then(dato => {
             // define input:
             const openApi = dato // Open API document
-            const targets = ['javascript-xhr'] // array of targets for code snippets. See list below...
+            const targets = ['node_native'] // array of targets for code snippets. See list below...
 
             try {
             // either, get snippets for ALL endpoints:
