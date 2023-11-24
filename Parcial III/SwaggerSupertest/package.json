@@ -1,0 +1,24 @@
+{
+  "name": "swaggersupertest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.test.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "cors": "^2.8.5",
+    "mocha": "^10.2.0",
+    "mysql2": "^3.6.5",
+    "redoc-express": "^2.1.0",
+    "server-express": "^1.0.2",
+    "supertest": "^6.3.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-themes": "^1.2.30",
+    "swagger-ui-express": "^5.0.0"
+  }
+}

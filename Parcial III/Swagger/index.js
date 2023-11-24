@@ -161,7 +161,7 @@ app.get("/estudiante", async (req, res) => {           //CONSULTA GENERAL
 });
 /**
  * @swagger
- * /estudiante/:id:
+ * /estudiante/?id_estudiante=id:
  *   get:
  *     summary: Obtiene un estudiante específico
  *     description: Obtiene la información de un estudiante específico por medio de su ID obtenido del parametro de la URL
@@ -298,3 +298,5 @@ app.patch("/estudiante/actualizar", async (req, res) => {
 app.listen(8081, (req, res) => {
     console.log("Servidor Express escuchando");
 });
+
+module.exports.app = app;
