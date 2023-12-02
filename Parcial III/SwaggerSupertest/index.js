@@ -284,7 +284,7 @@ app.patch("/estudiante/actualizar", async (req, res) => {
         console.log(sentencia);
         const [rows, fields] = await conn.query(sentencia);
         if (rows.affectedRows != 0){
-            res.status(200).json({ mensaje : "Estudiante Actualizado Correctamente"});
+            //res.status(200).json({ mensaje : "Estudiante Actualizado Correctamente"});
         }
         else{
             res.status(400).json({mensaje : "Estudiante No Actualizado"});
