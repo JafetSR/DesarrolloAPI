@@ -20,7 +20,7 @@ Siguiendo los principios y comportamientos definidos en los libros *REST API Des
 Se sugiere usar un verbo HTTP específico dependiendo de la particularidad de la llamada, respetando tanto los verbos como los códigos de estado para cada operación.    
 ***Verbos utilizados dependiendo de la acción realizada en el servidor***
 | **MÉTODO** | **<center>ACCIÓN</center>**                   |
-|:----------:|:----------------------------------------------|
+|:----------:|-----------------------------------------------|
 |**GET**     |Solicita información de recursos.              |
 |**POST**    |Creación de nuevos recursos.                   |
 |**PUT**     |Actualiza un recurso existente en su totalidad.|
